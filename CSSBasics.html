@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color:blue;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .C1{
+            color: teal;
+        }
+        #id1{
+            color: brown;
+        }
+        div , p {
+            color:blue;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/mystyle.css">
+</head>
+<body>
+    <h1>CSS Practice</h1>
+    <h1 style="color: rgb(255, 8, 0); font-family: Arial, Helvetica, sans-serif;">This is Frontend Class</h1>
+    <h2>We are Studying CSS</h2>
+    <h3>This is the part of unit 1</h3>
+    <p class="C1">This is Paragraph 1</p>
+    <p id="id1">This is paragraph 2</p>
+    <div>
+        <h2>This is Heading2 inside div section</h2>
+        <p>This is para1 inside div section</p>
+        <p>This is para2 inside div section</p>
+        <section>
+            <p>This is para inside section tag</p>
+        </section>
+    </div>
+</body>
+</html>
+
+<!--Combinator Selectors
+
+div , p -- GROUP OF SELECTORS
+div p -- DESCENDENT COMBINATOR  -> All <p> inside <div> at any level
+div > P -- CHILD COMBINATOR     -> Only direct child <p> of <div>
+div + p -- ADJACENT SIBILING COMBINATOR
+p ~ ul -- GENERAL SIBILING COMBINATOR
+
+
+Structural pseudo-classes
+
+:first-child -- count from all 
+:first-of-type -- from common type
+:last-child -- last child of its parent
+:last-of-type -- last <p> element of its parent
+
+
+Pseudo elements
+
+p::after
+p::before
+p::first-letter  -->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<form action="#" method="post">
+    <label>Username:</label>
+    <input type="text" name="username" placeholder="Enter username" autofocus>
+    <br><br>
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter password" required>
+    <br><br>
+    <label>Email ID:</label>
+    <input type="email" name="email" placeholder="Enter email" required>
+    <br>
+    <input list="courses" name="course" placeholder="Select Course">
+    <datalist id="courses"> 
+        <option value="Btech">
+        <option value="BBA">
+        <option value="BSC">
+        <option value="MBA">
+    </datalist>
+    <br><br>
+    p>Addition of two numbers:</p>
+    <input type="number" name="a" id="a" value="0">
+    + 
+    <input type="number" name="b" id="b" value="0">
+    =
+    <output name="result"></output><br><br>
+
+    <!--Radio buttons-->
+    <label>Select Task:</label><br>
+    <input type="radio" name="task" value="Assignment" required> Assignment
+    <input type="radio" name="task" value="Project"> Project
+    <input type="radio" name="task" value="Exam"> Exam<br><br>
+    <!--Checkboxes-->
+    <label>Select Hobbies:</label><br>
+    <input type="checkbox" name="hobbies[]" value="Reading"> Reading
+    <input type="checkbox" name="hobbies[]" value="Gaming"> Gaming
+    <input type="checkbox" name="hobbies[]" value="Music"> Music
+    <input type="checkbox" name="hobbies[]" value="Sports"> Sports<br><br>
+    <textarea name="comments" rows="4" cols="50" placeholder="Write Reviews..."></textarea>
+    <br><br>
+    <input type="date" name="dob" id="dateid"><br>
+    <input type="time" name="timeid" id="timeid"><br>
+    <input type="color" name="colorid" value="colorid"><br>
+    <input type="range" name="rangeid" min="0" max="20"><br>
+    <input type="url" name="urlid" placeholder="Enter URL"><br>
+    <input type="tel" name="telid" id="telid"><br>
+    <input type="number" name="numberid" id="numberid" min="5" max="25"><br>
+    <input type="search" name="searchid" placeholder="Search here"><br><br>
+    <label>Choose State:</label> <br>
+    <select name="state" id="state" size="2" multiple>
+        <option value="">--Select State--</option>
+        <option value="Punjab">Uttar Pradesh</option>
+        <option value="Haryana">Punjab</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Uttar Pradesh">Haryana</option>
+    </select>
+    <br><br>
+    <label for="filefield">Select File:</label>
+    <input type="file" id="filefield" name="filefield" accept="application/pdf">
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <input type="image" name="imagebtn" id="imagebtn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Ici4Wb5KHGMXmRyXW826m52HGTJZJmKelA&s" alt="Submit" width="150" height="100">
+</form>
+</body>
+</html>

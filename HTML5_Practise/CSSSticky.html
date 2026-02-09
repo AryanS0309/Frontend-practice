@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sticky Div Example</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box1 {
+            height: 100vh;
+            background: red;
+        }
+
+        .box2 {
+            height: 100vh;
+            background: blue;
+        }
+
+        .box3 {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: green;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .box4 {
+            height: 100vh;
+            background: orange;
+        }
+        div {
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">div 1</div>
+    <div class="box2">div 2</div>
+    <div class="box3">div 3</div>
+    <div class="box4">div 4</div>
+</body>
+</html>

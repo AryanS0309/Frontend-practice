@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nature Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #e8f5e9;
+            color: #2e3d2f;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        .navbar {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: #f1f8e9;
+            font-size: 26px;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+        }
+
+        .row {
+            display: grid;
+            border-bottom: 1px solid #c8e6c9;
+        }
+
+        .row.images {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .row.middle {
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .row.bottom {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            background: #000;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #1b5e20;
+            color: #e8f5e9;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .row.images,
+            .row.middle,
+            .row.bottom {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="navbar">
+     Nature
+    </div>
+
+    <div class="row images">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Forest">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Mountains">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="River">
+    </div>
+
+    <div class="row middle">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>
+            Nature is not a place to visit, it is home.
+            This space is designed to reconnect you with calm,
+            balance, and the timeless beauty of the natural world.
+        </p>
+    </div>
+
+    <div class="row bottom">
+        <div>
+            <h3>Address</h3>
+            <p>
+                Aryan Singh<br>
+                Lovely Professional University<br>
+                Punjab, India
+            </p>
+        </div>
+
+        <div>
+            <h3>About This Space</h3>
+            <p>
+                Inspired by forests, rivers, and open skies,
+                this design reflects harmony between technology and nature.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+     Designed with Nature in Mind © 2026 Nature Connect
+    </div>
+
+</div>
+</body>
+</html>
