@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let laptop = {
+            Brand: "HP",
+            Model: "Victus",
+            Storage: "1tb",
+            Gen: "13th gen"
+        }
+        console.log(laptop);
+        console.log(laptop.Brand, laptop.Model, laptop.Storage, laptop.Gen);
+        console.log(`I have a ${laptop.Brand} laptop whose model is ${laptop.Model} having storage ${laptop.Storage} and generation ${laptop.Gen}`);
+
+        //Object Constructor
+        let student = new Object();
+        student.name="Aryan";
+        student.rollno=15;
+        console.log(student["name"], student["rollno"]);
+
+        //Function Constructor
+        function pen(brand, color){
+            this.brandnew = brand;
+            this.colornew = color;
+        }
+        let pen1 = new pen("Cello", "blue");
+        console.log(pen1.brandnew, pen1.colornew)
+
+    </script>
+</body>
+</html>
