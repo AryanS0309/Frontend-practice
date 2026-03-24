@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Event</h1>
+    <h1 id="heading">Hello JavaScript</h1>
+    <button id="btn">Change Text</button>
+    <button id="Clickbtn">Click Me</button>
+    <button id="Dbclick">Double Click</button
+
+    <div id="box"></div>
+    <script>
+        //select element using DOM
+        // let heading = document.getElementById("heading");
+        // let btn = document.getElementById("btn");
+        // btn.addEventListener("click", function(){
+        //     heading.innerText = "Welcome to JavaScript Event";
+        // });
+        // let clickbtn = document.getElementById("Clickbtn");
+        // clickbtn.addEventListener("click", function(){
+        //     heading.innerText = "You Clicked the Button";
+        // });
+        // let dbclick = document.getElementById("Dbclick");
+        // dbclick.addEventListener("dblclick", function(){
+        //     heading.innerText = "You Double Clicked the Button";
+        // });
+let box = document.getElementById("box");
+box.addEventListener("mouseover", function(){
+    box.style.background = "yellow";
+});
+box.addEventListener("mouseout", function(){
+    box.style.background = "white";
+});
+let dropdown = document.getElementById("dropdown");
+dropdown.addEventListener("change", function(){
+    </script>
+</body>
+</html>

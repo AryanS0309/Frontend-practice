@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //Deconstructuting of an array
+    let arr = [10, 3, 4, 5];
+    const [a, b, c, d] = arr;
+    console.log(a,b,d);
+    //console.log(c);
+
+    let array1 = ["a", "b", "c"];
+    const [x, y, z=9, g=40] = array1;
+    console.log(x,y,z,g);
+
+    //Deconstructuting of an object
+    let obj = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    };
+    const {name, age, city} = obj;
+    console.log(name, age, city);
+
+    //Create an array & copy into another array using spread operator push 90 to new array
+    let arr1 = [1,2,3,4];
+    let arr2 = [...arr1];
+    arr2.push(90);
+    console.log(arr2);
+
+    //uasage of spread operator in function call
+    function sum(a, b, c){
+        return a + b + c;
+    }
+    let numbers = [1, 2, 3];
+    console.log(sum(...numbers));
+
+    //spreaing of object
+    let obj1 = {
+        name: "Alice",
+        age: 25
+    };      
+    let obj2 = {...obj1, city: "Los Angeles"};
+    console.log(obj2);
+    
+
+</script>
+<body>
+    
+</body>
+</html>
