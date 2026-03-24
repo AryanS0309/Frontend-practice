@@ -6,9 +6,28 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="head1">Heading 1</h1>
+    <h1 id="head2">Heading 2</h1>
+    <h1 id="head3">Heading 3</h1>
+    <button id="btn1">Change Color</button>
+
     <script>
+        let elt = document.getElementById("btn1");
+        elt.addEventListener("click",() => {
+            setTimeout(() => {
+                document.getElementById("head1").style.color = "red";
+            }, 2000);
+                setTimeout(() => {
+                    document.getElementById("head2").style.color = "blue";
+                }, 4000);
+                setTimeout(() => {
+                    document.getElementById("head3").style.color = "green";
+                }, 6000);
+            });
+
+
         function addition(a,b,c){
-            return a+b+c;
+            console.log(a+b+c); 
         }
         setTimeout(() => {
             addition(1,3,4);
