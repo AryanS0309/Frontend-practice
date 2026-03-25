@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 200px;
+        }
+        #box img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <img id="myImage" src="https://static.vecteezy.com/system/resources/thumbnails/060/843/811/small/close-up-of-raindrops-on-leaves-hd-background-luxury-hd-wallpaper-image-trendy-background-illustration-free-photo.jpg">
+    </div>
+    <script>
+        function showImage(callback) {
+            setTimeout(function () {
+                document.getElementById("myImage").style.display = "block";
+                callback();
+            }, 2000);
+        }
+        function showBorder() {
+            setTimeout(function () {
+                document.getElementById("box").style.border = "8px solid brown";
+            }, 3000);
+        }
+        showImage(showBorder);
+    </script>
+</body>
+</html>
